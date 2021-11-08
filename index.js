@@ -13,5 +13,8 @@ function receivesAFunction(spy){
 } 
 // task 2
 function namedFunction() {
-    return 2 + 2
+    console.log("hope this works")
+}
+function returnsANamedFuncton() {
+    return namedFunction
 }
