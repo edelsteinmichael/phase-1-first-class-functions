@@ -7,14 +7,23 @@ function spy() {
     console.log("walk the dog")
     activityOne()
 }
-function receivesAFunction(spy){
+function receivesAFunction(spy) {
     console.log("activities for today")
     spy()
 } 
 // task 2
-function namedFunction() {
-    console.log("hope this works")
+
+function returnsANamedFunction() {
+    return function namedFunction() {
+        console.log("hope this works")
+    }
 }
-function returnsANamedFuncton() {
-    return namedFunction
+
+// task 3
+
+
+function returnsAnAnonymousFunction() {
+    return function () {
+        console.log("this has to work")
+    }
 }
